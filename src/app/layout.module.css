@@ -1,0 +1,54 @@
+
+
+.main {
+  background-image: url("/ycbild.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 6rem;
+    min-height: 100vh;
+  }
+  
+  .container {
+    margin-top: 2rem;
+    width: 80%; 
+    max-width: 700px; 
+    height: auto; 
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 6rem;
+    box-shadow: var(--content-shadow);
+   }
+   
+   .content {
+    color: black;
+    background-color: var(--content-bg);
+    font-size: 20px;
+    padding: 10px;
+    border: var(--content-border);
+    border-radius: 10px;
+    margin-top: 2rem; 
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: bold;
+    box-shadow: var(--content-shadow);
+   }
+
+   .list li{
+   
+    list-style-type: none;
+   }
+   
+   /* Media query for smaller screens */
+   @media (max-width: 768px) {
+    .container {
+       width: 90%; 
+       padding: 1rem;
+    }
+   }

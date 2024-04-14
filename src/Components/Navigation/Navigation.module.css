@@ -1,0 +1,44 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjusted for responsiveness */
+  max-width: var(--max-width);
+  width: 100%; /* Ensures the grid takes full width on smaller screens */
+  gap: 1rem; /* Adds some space between the cards */
+  padding: 1rem; /* Adds padding around the grid */
+ }
+ 
+ .card {
+  text-align: center;
+  padding: 1rem 1.2rem;
+  border-radius: var(--border-radius);
+  background: whitesmoke;
+  border: 1px solid rgba(var(--card-border-rgb), 0);
+  transition: background 200ms, border 200ms;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for a modern look */
+ }
+ 
+ .card span {
+  display: inline-block;
+  transition: transform 200ms;
+ }
+ 
+ .card h2 {
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+ }
+ 
+ .card p {
+  margin: 0;
+  opacity: 0.6;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  max-width: 30ch;
+  text-wrap: balance;
+ }
+ 
+ .card:hover {
+  background: rgba(var(--card-rgb), 0.1);
+  border: 1px solid rgba(var(--card-border-rgb), 0.1);
+  transform: translateY(-5px); /* Adds a slight lift effect on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhances the shadow on hover for a more dynamic feel */
+ }
